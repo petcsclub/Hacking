@@ -3,7 +3,7 @@
 
 These problems were taken from the ongoing PicoCTF2019 contest.
 
-### Warm up: Insp3ct0r (50 pts)
+### Warmup 0: Insp3ct0r (50 pts)
 
 **Problem:**
 
