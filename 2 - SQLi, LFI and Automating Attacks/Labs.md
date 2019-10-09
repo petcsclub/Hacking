@@ -1,5 +1,4 @@
 ## Meeting 2: SQLi, LFI and Automating Attacks
----
 
 ## Resources
 1. [Insomnia REST Client](https://insomnia.rest)
