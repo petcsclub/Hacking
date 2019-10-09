@@ -67,8 +67,17 @@ Get the admin's password. https://2019shell1.picoctf.com/problem/62195/ or http:
 
 This is not a PicoCTF problem. Can you leak the source code of solution.php?
 
+**Hints:**
+
+1. Try `php://filter/convert.base64-encode/...`
+
 ### Lab 4: http://rfi.warchall.net/
 
 **Problem**
 
 This is not a PicoCTF problem. Can you get a shell?
+
+**Hints:**
+
+1. Can you gain RCE?
+2. Can you find a one-line PHP backdoor? (Use Google!)
