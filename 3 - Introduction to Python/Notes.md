@@ -20,7 +20,7 @@ Example code: [https://repl.it/@redapple410/hangman](https://repl.it/@redapple41
 
 **Explanation:**
 
-Go to repl.it and create a new repl (project). Choose Python 2 as the language.
+Go to [repl.it](https://repl.it/) and create a new repl (project). Choose Python 2 as the language.
 
 
 ---
