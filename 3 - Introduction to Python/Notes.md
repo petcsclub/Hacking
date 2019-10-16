@@ -8,7 +8,7 @@
 
 ## Notes
 
-Follow along with the steps below to create your own Hangman/word guessing game in Python! 
+Follow along with the steps below to create your own Hangman/word guessing game in Python! Each step builds on the code from the previous step.  
 Note that we will be using Python 2 for this lesson.  
   
 Example: [https://hangman.redapple410.repl.run](https://hangman.redapple410.repl.run)  
@@ -28,7 +28,7 @@ Go to [repl.it](https://repl.it/) and create a new repl (project). Choose Python
 
 **Explanation:**
 
-Output something using `print "something"`.
+Imagine that you are playing hangman, and need to pick a word. Output this word using `print "The correct word is ..."`.  
 
 **Example:**
 
@@ -40,7 +40,7 @@ Output something using `print "something"`.
 
 **Explanation:**
 
-Create a variable like `<name> = <value>`. Then, output its value using `print <name>`.  
+Take your word from Step 1, and create a variable (perhaps call it `word`?) to store it using `<name> = <value>`. Then, output its value using `print "The correct word is %s." % (<name>)`.  
 
 **Example:**
 
@@ -52,7 +52,7 @@ Create a variable like `<name> = <value>`. Then, output its value using `print <
 
 **Explanation:**
 
-Use `<name> = raw_input("prompt")` to get input from the user.
+Create a new variable (perhaps call it `guess`?) and use `<name> = raw_input("Guess the word: ")` to get input from the user. It's also a good idea to output the user's guess.   
 
 **Example:**
 
@@ -64,7 +64,7 @@ Use `<name> = raw_input("prompt")` to get input from the user.
 
 **Explanation:**
 
-Do something `if` a condition is true!
+After getting input, check to see if the user's guess matches the correct word using `if guess == word:`. If it matches, output something nice! Otherwise, use `else:` to tell them that the guess is incorrect.  
 
 **Example:**
 
@@ -76,7 +76,7 @@ Do something `if` a condition is true!
 
 **Explanation:**
 
-Continuously do something `while` a condition is true!
+Use a `while` loop to let the user keep guessing the word until they get it right (ie. keep guessing `while guess != word`). You can even implement another variable to keep count of how many guesses it takes!
 
 **Example:**
 
@@ -88,7 +88,7 @@ Continuously do something `while` a condition is true!
 
 **Explanation:**
 
-Count exactly how many times you want to do something!
+Now, instead of asking the user to guess the entire word, ask them to guess just one letter instead. Every time they guess a letter, use a `for` loop to go through every letter of the correct word and compare it to the user's guess. If they match, output something (eg. `print "Found letter %s at index %d" % (guess, i)`).  
 
 **Example:**
 
@@ -100,7 +100,7 @@ Count exactly how many times you want to do something!
 
 **Explanation:**
 
-Add strings together, and replace parts of a string.
+Use string concatenation and string slicing to keep track of the correct letters that the user has guess so far, and output them to the screen.  
 
 **Example:**
 
@@ -112,7 +112,7 @@ Add strings together, and replace parts of a string.
 
 **Explanation:**
 
-Pretty self-explanatory. For lists of things.
+Create a pre-defined list of words (perhaps call it `words`?) that you can choose from.  
 
 **Example:**
 
@@ -124,9 +124,7 @@ Pretty self-explanatory. For lists of things.
 
 **Explanation:**
 
-Use pre-written code in your program using `import <module name>`.  
-Examples of standard modules available for use by everyone are `random` and `time`.   
-You can also write your own modules, if you want.
+Import the `random` module using `import random`. Then, use `word = random.choice(words)` to randomly choose a word from the list you created in Step 8, and use it as the correct word for Hangman.  
 
 **Example:**
 
