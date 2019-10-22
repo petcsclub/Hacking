@@ -3,7 +3,8 @@
 ## Resources
 1. [Repl.it](https://repl.it/)
 2. [Python Documentation](https://docs.python.org/2.7/tutorial/index.html)
-3. [Example Hangman Game (made in Python)](https://hangman.redapple410.repl.run)
+3. [Python Library Reference (for standard modules)](https://docs.python.org/2/library/)
+4. [Example Hangman Game made in Python](https://hangman.redapple410.repl.run)
 
 
 ## Notes
@@ -100,7 +101,7 @@ Now, instead of asking the user to guess the entire word, ask them to guess just
 
 **Explanation:**
 
-Use string concatenation and string slicing to keep track of the correct letters that the user has guess so far, and output them to the screen.  
+Use string concatenation and string slicing like `word[:i] + guess + word[i+1:]` to keep track of which letters the user has correctly guess so far, and output them to the screen. 
 
 **Example:**
 
@@ -125,6 +126,7 @@ Create a pre-defined list of words (perhaps call it `words`?) that you can choos
 **Explanation:**
 
 Import the `random` module using `import random`. Then, use `word = random.choice(words)` to randomly choose a word from the list you created in Step 8, and use it as the correct word for Hangman.  
+(For those who are too lazy to consult the Library Reference, `random.choice(<list>)` returns a random item from the given list.)  
 
 **Example:**
 
