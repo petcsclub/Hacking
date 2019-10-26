@@ -4,12 +4,12 @@
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Labs](#labs)
-  * [Warmup 0: Insp3ct0r (50 pts)](#warmup-0--insp3ct0r--50-pts-)
-  * [Lab 1: dont-use-client-side (100 pts)](#lab-1--dont-use-client-side--100-pts-)
-  * [Lab 2: logon (100 pts)](#lab-2--logon--100-pts-)
-  * [Lab 3: Open-to-admins (200 pts)](#lab-3--open-to-admins--200-pts-)
-  * [Lab 4: Irish-Name-Repo 1 (300 pts)](#lab-4--irish-name-repo-1--300-pts-)
-  * [Lab 5: JaWT Scratchpad (400 pts, but imo should be 700)](#lab-5--jawt-scratchpad--400-pts--but-imo-should-be-700-)
+  * [Warmup 0: Insp3ct0r (50 pts)](#warmup-0-insp3ct0r-50-pts)
+  * [Lab 1: dont-use-client-side (100 pts)](#lab-1--dont-use-client-side-100-pts)
+  * [Lab 2: logon (100 pts)](#lab-2-logon-100-pts)
+  * [Lab 3: Open-to-admins (200 pts)](#lab-3-open-to-admins-200-pts)
+  * [Lab 4: Irish-Name-Repo 1 (300 pts)](#lab-4-irish-name-repo-1-300-pts)
+  * [Lab 5: JaWT Scratchpad (400 pts, but imo should be 700)](#lab-5-jawt-scratchpad-400-pts-but-imo-should-be-700)
 
 ## Labs
 
