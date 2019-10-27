@@ -13,7 +13,7 @@
         <meta name="description" content="Web Security and Exploitation Resources for the PET Computer Sciece Club">
       
       
-        <link rel="canonical" href="https://petcsclub.github.io/Hacking/1 - Introduction to Web Exp/Solution 3 Open-to-admins/">
+        <link rel="canonical" href="https://petcsclub.github.io/Hacking/Resources/1 - Introduction to Web Exp/Solution 5 JaWT Scratchpad/">
       
       
         <meta name="author" content="Kevin Dai et al.">
@@ -37,27 +37,27 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
-        <title>Solution 3 Open to admins - Web Security</title>
+        <title>Solution 5 JaWT Scratchpad - Web Security and Exploitation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
         
-        <meta name="theme-color" content="#3f51b5">
+        <meta name="theme-color" content="">
       
     
     
-      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
@@ -66,9 +66,9 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
     
-      <link rel="manifest" href="../../manifest.webmanifest">
+      <link rel="manifest" href="../../../manifest.webmanifest">
     
     
     
@@ -79,7 +79,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-primary="black" data-md-color-accent="red">
   
     <svg class="md-svg">
       <defs>
@@ -102,9 +102,9 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://petcsclub.github.io/Hacking" title="Web Security" class="md-header-nav__button md-logo">
+        <a href="https://petcsclub.github.io/Hacking" title="Web Security and Exploitation" class="md-header-nav__button md-logo">
           
-            <i class="md-icon"></i>
+            <i class="md-icon">public</i>
           
         </a>
       </div>
@@ -115,11 +115,11 @@
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
             <span class="md-header-nav__topic">
-              Web Security
+              Web Security and Exploitation
             </span>
             <span class="md-header-nav__topic">
               
-                Solution 3 Open to admins
+                Solution 5 JaWT Scratchpad
               
             </span>
           
@@ -185,6 +185,49 @@
         
       
       
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Labs/" class="md-tabs__link md-tabs__link--active">
+          Resources
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
       <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
@@ -194,12 +237,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://petcsclub.github.io/Hacking" title="Web Security" class="md-nav__button md-logo">
+    <a href="https://petcsclub.github.io/Hacking" title="Web Security and Exploitation" class="md-nav__button md-logo">
       
-        <i class="md-icon"></i>
+        <i class="md-icon">public</i>
       
     </a>
-    Web Security
+    Web Security and Exploitation
   </label>
   
     <div class="md-nav__source">
@@ -230,8 +273,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Hacking" class="md-nav__link">
-      Hacking
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
     </a>
   </li>
 
@@ -242,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Cheat Sheet/" title="Cheat Sheet" class="md-nav__link">
+    <a href="../../../cheat_sheet/" title="Cheat Sheet" class="md-nav__link">
       Cheat Sheet
     </a>
   </li>
@@ -260,10 +303,31 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
-      1   Introduction to Web Exp
+      Resources
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-3">
+        Resources
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+    
+    <label class="md-nav__link" for="nav-3-1">
+      1   Introduction to Web Exp
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
         1   Introduction to Web Exp
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -275,8 +339,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Labs/" title="Labs" class="md-nav__link">
-      Labs
+    <a href="../Labs/" title="Meeting 1 Labs" class="md-nav__link">
+      Meeting 1 Labs
     </a>
   </li>
 
@@ -321,6 +385,30 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../Solution 3 Open-to-admins/" title="Solution 3 Open to admins" class="md-nav__link">
+      Solution 3 Open to admins
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Solution 4 Irish-Name-Repo 1/" title="Solution 4 Irish Name Repo 1" class="md-nav__link">
+      Solution 4 Irish Name Repo 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -330,11 +418,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Solution 3 Open to admins
+        Solution 5 JaWT Scratchpad
       </label>
     
-    <a href="./" title="Solution 3 Open to admins" class="md-nav__link md-nav__link--active">
-      Solution 3 Open to admins
+    <a href="./" title="Solution 5 JaWT Scratchpad" class="md-nav__link md-nav__link--active">
+      Solution 5 JaWT Scratchpad
     </a>
     
       
@@ -354,8 +442,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#lab-3-open-to-admins-200-pts" class="md-nav__link">
-    Lab 3: Open-to-admins (200 pts)
+  <a href="#lab-5-jawt-scratchpad-400-pts-but-imo-should-be-700" class="md-nav__link">
+    Lab 5: JaWT Scratchpad (400 pts, but imo should be 700)
   </a>
   
 </li>
@@ -383,49 +471,25 @@
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Solution 4 Irish-Name-Repo 1/" title="Solution 4 Irish Name Repo 1" class="md-nav__link">
-      Solution 4 Irish Name Repo 1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Solution 5 JaWT Scratchpad/" title="Solution 5 JaWT Scratchpad" class="md-nav__link">
-      Solution 5 JaWT Scratchpad
-    </a>
-  </li>
-
-        
       </ul>
     </nav>
   </li>
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-3-2">
       2   SQLi, LFI and Automating Attacks
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
         2   SQLi, LFI and Automating Attacks
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -437,8 +501,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../2 - SQLi, LFI and Automating Attacks/Labs/" title="Labs" class="md-nav__link">
-      Labs
+    <a href="../../2 - SQLi, LFI and Automating Attacks/Labs/" title="Meeting 2 Labs" class="md-nav__link">
+      Meeting 2 Labs
     </a>
   </li>
 
@@ -447,21 +511,21 @@
     </nav>
   </li>
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
     
-    <label class="md-nav__link" for="nav-5">
+    <label class="md-nav__link" for="nav-3-3">
       3   Introduction to Python
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
         3   Introduction to Python
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -473,9 +537,14 @@
 
 
   <li class="md-nav__item">
-    <a href="../../3 - Introduction to Python/Notes/" title="Notes" class="md-nav__link">
-      Notes
+    <a href="../../3 - Introduction to Python/Notes/" title="Meeting 3 & 4 Notes" class="md-nav__link">
+      Meeting 3 & 4 Notes
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -511,8 +580,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#lab-3-open-to-admins-200-pts" class="md-nav__link">
-    Lab 3: Open-to-admins (200 pts)
+  <a href="#lab-5-jawt-scratchpad-400-pts-but-imo-should-be-700" class="md-nav__link">
+    Lab 5: JaWT Scratchpad (400 pts, but imo should be 700)
   </a>
   
 </li>
@@ -545,24 +614,24 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/petcsclub/Hacking/edit/master/docs/1 - Introduction to Web Exp/Solution 3 Open-to-admins.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/petcsclub/Hacking/edit/master/docs/Resources/1 - Introduction to Web Exp/Solution 5 JaWT Scratchpad.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Solution 3 Open to admins</h1>
+                  <h1>Solution 5 JaWT Scratchpad</h1>
                 
                 <h2 id="problem-statement">Problem Statement<a class="headerlink" href="#problem-statement" title="Permanent link">&para;</a></h2>
-<h3 id="lab-3-open-to-admins-200-pts">Lab 3: Open-to-admins (200 pts)<a class="headerlink" href="#lab-3-open-to-admins-200-pts" title="Permanent link">&para;</a></h3>
+<h3 id="lab-5-jawt-scratchpad-400-pts-but-imo-should-be-700">Lab 5: JaWT Scratchpad (400 pts, but imo should be 700)<a class="headerlink" href="#lab-5-jawt-scratchpad-400-pts-but-imo-should-be-700" title="Permanent link">&para;</a></h3>
 <p><strong>Problem:</strong></p>
 <blockquote>
-<p>This secure website allows users to access the flag only if they are admin and if the time is exactly 1400.
-https://2019shell1.picoctf.com/problem/49858/ or http://2019shell1.picoctf.com:49858</p>
+<p>Check the admin scratchpad! https://2019shell1.picoctf.com/problem/12283/ or http://2019shell1.picoctf.com:12283</p>
 </blockquote>
 <p><strong>Hints:</strong></p>
 <ol>
-<li>Can cookies help you to get the flag?</li>
+<li>What is that cookie?</li>
+<li>Have you heard of JWT?</li>
 </ol>
 <h2 id="write-up">Write-Up<a class="headerlink" href="#write-up" title="Permanent link">&para;</a></h2>
-<p>This is similar to Lab 2. Instead, set <code>admin</code> to <code>True</code> and <code>time</code> to <code>1400</code>.</p>
+<p>Use the latest version of John-The-Ripper from GitHub to crack JWT signatures. You can also write a custom Python script to loop through the <code>rockyou</code> password list and perform a dictionary attack.</p>
                 
                   
                 
@@ -583,7 +652,7 @@ https://2019shell1.picoctf.com/problem/49858/ or http://2019shell1.picoctf.com:4
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../Solution 2 logon/" title="Solution 2 logon" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Solution 4 Irish-Name-Repo 1/" title="Solution 4 Irish Name Repo 1" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -592,19 +661,19 @@ https://2019shell1.picoctf.com/problem/49858/ or http://2019shell1.picoctf.com:4
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Solution 2 logon
+                Solution 4 Irish Name Repo 1
               </span>
             </div>
           </a>
         
         
-          <a href="../Solution 4 Irish-Name-Repo 1/" title="Solution 4 Irish Name Repo 1" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../2 - SQLi, LFI and Automating Attacks/Labs/" title="Meeting 2 Labs" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Solution 4 Irish Name Repo 1
+                Meeting 2 Labs
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -631,7 +700,7 @@ https://2019shell1.picoctf.com/problem/49858/ or http://2019shell1.picoctf.com:4
       </div>
       
   <div class="md-footer-social">
-    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
     
       <a href="https://github.com/petcsclub" class="md-footer-social__link fa fa-github"></a>
     
@@ -643,9 +712,9 @@ https://2019shell1.picoctf.com/problem/49858/ or http://2019shell1.picoctf.com:4
       
     </div>
     
-      <script src="../../assets/javascripts/application.ac79c3b0.js"></script>
+      <script src="../../../assets/javascripts/application.ac79c3b0.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       
     
   </body>
