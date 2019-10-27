@@ -14,10 +14,11 @@ copyright: 'Copyright &copy; 2019 - 2020 Kevin Dai'
 # Configuration
 theme:
   name: 'material'
+  custom_dir: 'material/'
   language: 'en'
   palette:
     primary: 'black'
-    accent: 'red'
+    accent: 'indigo'
   font:
     text: 'Roboto'
     code: 'Roboto Mono'

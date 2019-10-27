@@ -6,7 +6,8 @@ title: Cheat Sheet
 This is a rough guideline to help you identify the vulnerabilities in a web application. When attacking a website, consider the questions being asked and follow the steps to an easy pwn! This guide will be updated before each meeting.
 
 ## What was that acronym?
-Sometimes we're too lazy to type out the full word, so I've compiled a nice list of acronyms for you to look up. Sometimes we use fancy jargon that no one understands. **[Click here for an amazing list](#jargon-decoder).**
+Sometimes we're too lazy to type out the full word, so I've compiled a nice list of acronyms for you to look up. Sometimes we use fancy jargon that no one understands.  
+**[Click here for an amazing list](#jargon-decoder).**
 
 ## Yes, but what exactly is this thing? *Think R.E.E.!*
 
