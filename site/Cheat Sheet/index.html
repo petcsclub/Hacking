@@ -1,0 +1,771 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Web Security and Exploitation Resources for the PET Computer Sciece Club">
+      
+      
+        <link rel="canonical" href="https://petcsclub.github.io/Hacking/Cheat Sheet/">
+      
+      
+        <meta name="author" content="Kevin Dai et al.">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+    
+    
+      
+        <title>Cheat Sheet - Web Security</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+      <link rel="manifest" href="../manifest.webmanifest">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#cheat-sheet" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://petcsclub.github.io/Hacking" title="Web Security" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Web Security
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Cheat Sheet
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/petcsclub/Hacking/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    petcsclub/Hacking
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://petcsclub.github.io/Hacking" title="Web Security" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Web Security
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/petcsclub/Hacking/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    petcsclub/Hacking
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Hacking" class="md-nav__link">
+      Hacking
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Cheat Sheet
+      </label>
+    
+    <a href="./" title="Cheat Sheet" class="md-nav__link md-nav__link--active">
+      Cheat Sheet
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-this-for" class="md-nav__link">
+    What is this for?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-was-that-acronym" class="md-nav__link">
+    What was that acronym?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-here" class="md-nav__link">
+    Start here...
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-stage-am-i-currently-at-aka-the-ree-model" class="md-nav__link">
+    What stage am I currently at (aka the R.E.E. model)?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-reconnaissance" class="md-nav__link">
+    1. Reconnaissance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-engagement" class="md-nav__link">
+    2. Engagement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-exploitationexfiltration" class="md-nav__link">
+    3. Exploitation/Exfiltration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jargon-decoder" class="md-nav__link">
+    Jargon Decoder
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      1   Introduction to Web Exp
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        1   Introduction to Web Exp
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../1 - Introduction to Web Exp/Labs/" title="Labs" class="md-nav__link">
+      Labs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../1 - Introduction to Web Exp/Solution 0 Insp3ct0r/" title="Solution 0 Insp3ct0r" class="md-nav__link">
+      Solution 0 Insp3ct0r
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../1 - Introduction to Web Exp/Solution 1 dont-use-client-side/" title="Solution 1 dont use client side" class="md-nav__link">
+      Solution 1 dont use client side
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../1 - Introduction to Web Exp/Solution 2 logon/" title="Solution 2 logon" class="md-nav__link">
+      Solution 2 logon
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../1 - Introduction to Web Exp/Solution 3 Open-to-admins/" title="Solution 3 Open to admins" class="md-nav__link">
+      Solution 3 Open to admins
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../1 - Introduction to Web Exp/Solution 4 Irish-Name-Repo 1/" title="Solution 4 Irish Name Repo 1" class="md-nav__link">
+      Solution 4 Irish Name Repo 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../1 - Introduction to Web Exp/Solution 5 JaWT Scratchpad/" title="Solution 5 JaWT Scratchpad" class="md-nav__link">
+      Solution 5 JaWT Scratchpad
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      2   SQLi, LFI and Automating Attacks
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        2   SQLi, LFI and Automating Attacks
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../2 - SQLi, LFI and Automating Attacks/Labs/" title="Labs" class="md-nav__link">
+      Labs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      3   Introduction to Python
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        3   Introduction to Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3 - Introduction to Python/Notes/" title="Notes" class="md-nav__link">
+      Notes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-this-for" class="md-nav__link">
+    What is this for?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-was-that-acronym" class="md-nav__link">
+    What was that acronym?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-here" class="md-nav__link">
+    Start here...
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-stage-am-i-currently-at-aka-the-ree-model" class="md-nav__link">
+    What stage am I currently at (aka the R.E.E. model)?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-reconnaissance" class="md-nav__link">
+    1. Reconnaissance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-engagement" class="md-nav__link">
+    2. Engagement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-exploitationexfiltration" class="md-nav__link">
+    3. Exploitation/Exfiltration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jargon-decoder" class="md-nav__link">
+    Jargon Decoder
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/petcsclub/Hacking/edit/master/docs/Cheat Sheet.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="cheat-sheet">Cheat Sheet<a class="headerlink" href="#cheat-sheet" title="Permanent link">&para;</a></h1>
+<h2 id="what-is-this-for">What is this for?<a class="headerlink" href="#what-is-this-for" title="Permanent link">&para;</a></h2>
+<p>This is a rough guideline to help you identify the vulnerabilities in a web application. When attacking a website, consider the questions being asked and follow the steps to an easy pwn! This guide will be updated before each meeting.</p>
+<h2 id="what-was-that-acronym">What was that acronym?<a class="headerlink" href="#what-was-that-acronym" title="Permanent link">&para;</a></h2>
+<p>Sometimes we're too lazy to type out the full word, so I've compiled a nice list of acronyms for you to look up. Sometimes we use fancy jargon that no one understands. <strong><a href="#jargon-decoder">Click here for an amazing list</a>.</strong></p>
+<h2 id="start-here">Start here...<a class="headerlink" href="#start-here" title="Permanent link">&para;</a></h2>
+<p>Haha, I made this up.</p>
+<h2 id="what-stage-am-i-currently-at-aka-the-ree-model">What stage am I currently at (aka the R.E.E. model)?<a class="headerlink" href="#what-stage-am-i-currently-at-aka-the-ree-model" title="Permanent link">&para;</a></h2>
+<h3 id="1-reconnaissance">1. Reconnaissance<a class="headerlink" href="#1-reconnaissance" title="Permanent link">&para;</a></h3>
+<p>You don't know anything about the website yet. You are trying to identify the attack surface and possible vulnerabilities. You still need to identify the objective (i.e., RCE, Authentication, Leaking Code etc...).  </p>
+<p><strong>If this is you, click here.</strong></p>
+<h3 id="2-engagement">2. Engagement<a class="headerlink" href="#2-engagement" title="Permanent link">&para;</a></h3>
+<p>You have found a possible vulnerability and are trying to exploit it now. You still need to verify if this vulnerability can lead to what you want. It is possible that you find a vulnerability/bug that is completely useless to you.</p>
+<p><strong>If this is you, click here.</strong></p>
+<h3 id="3-exploitationexfiltration">3. Exploitation/Exfiltration<a class="headerlink" href="#3-exploitationexfiltration" title="Permanent link">&para;</a></h3>
+<p>You found and verified the vulnerability and need to complete the full exploit. This is where you can (if you want) write a script to complete the exploit.</p>
+<p><strong>If this is you, click here.</strong></p>
+<h2 id="jargon-decoder">Jargon Decoder<a class="headerlink" href="#jargon-decoder" title="Permanent link">&para;</a></h2>
+<p>Thank you Wikipedia.</p>
+<table>
+<thead>
+<tr>
+<th>Short Form</th>
+<th>Full Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>--</td>
+<td>Attack surface</td>
+<td>The attack surface of a software environment is the sum of the different points (the "attack vectors") where an unauthorized user (the "attacker") can try to enter data to or extract data from an environment.</td>
+</tr>
+<tr>
+<td>--</td>
+<td>Attack vector</td>
+<td>A vector in computing is the method that this code uses to propagate itself or infect a computer.</td>
+</tr>
+<tr>
+<td>LFI</td>
+<td>Local File Inclusion</td>
+<td></td>
+</tr>
+<tr>
+<td>RFI</td>
+<td>Remote File Inclusion</td>
+<td></td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Structured Query Language</td>
+<td>It is a programming language designed for querying and managing databases. Some examples include MySQL, Oracle SQL and SQLite.</td>
+</tr>
+<tr>
+<td>SQLi</td>
+<td>SQL Injection</td>
+<td>A code injection technique in which malicious SQL statements are inserted into an entry field for execution (e.g. to dump the database contents to the attacker). SQL injection is mostly known as an attack vector for websites but can be used to attack any type of SQL database.</td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Hacking" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Hacking
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../1 - Introduction to Web Exp/Labs/" title="Labs" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Labs
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019 - 2020 Kevin Dai
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/petcsclub" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.ac79c3b0.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

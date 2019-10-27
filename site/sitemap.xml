@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+     <loc>https://petcsclub.github.io/Hacking/</loc>
+     <lastmod>2019-10-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://petcsclub.github.io/Hacking/Cheat Sheet/</loc>
+     <lastmod>2019-10-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://petcsclub.github.io/Hacking/1 - Introduction to Web Exp/Labs/</loc>
+     <lastmod>2019-10-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://petcsclub.github.io/Hacking/1 - Introduction to Web Exp/Solution 0 Insp3ct0r/</loc>
+     <lastmod>2019-10-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://petcsclub.github.io/Hacking/1 - Introduction to Web Exp/Solution 1 dont-use-client-side/</loc>
+     <lastmod>2019-10-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://petcsclub.github.io/Hacking/1 - Introduction to Web Exp/Solution 2 logon/</loc>
+     <lastmod>2019-10-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://petcsclub.github.io/Hacking/1 - Introduction to Web Exp/Solution 3 Open-to-admins/</loc>
+     <lastmod>2019-10-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://petcsclub.github.io/Hacking/1 - Introduction to Web Exp/Solution 4 Irish-Name-Repo 1/</loc>
+     <lastmod>2019-10-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://petcsclub.github.io/Hacking/1 - Introduction to Web Exp/Solution 5 JaWT Scratchpad/</loc>
+     <lastmod>2019-10-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://petcsclub.github.io/Hacking/2 - SQLi, LFI and Automating Attacks/Labs/</loc>
+     <lastmod>2019-10-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://petcsclub.github.io/Hacking/3 - Introduction to Python/Notes/</loc>
+     <lastmod>2019-10-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>
