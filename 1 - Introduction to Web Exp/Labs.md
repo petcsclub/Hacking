@@ -1,5 +1,4 @@
 ## Meeting 1: Introduction to Web Exploitation
----
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
@@ -28,6 +27,8 @@ https://2019shell1.picoctf.com/problem/28717/ or http://2019shell1.picoctf.com:2
 
 **[See Solution](Warmup%200%20-%20Insp3ct0r.md)**
 
+---
+
 ### Lab 1: dont-use-client-side (100 pts)
 
 **Problem:**
@@ -39,6 +40,8 @@ https://2019shell1.picoctf.com/problem/49886/ or http://2019shell1.picoctf.com:4
 
 1. Never trust the client
 
+---
+
 ### Lab 2: logon (100 pts)
 
 **Problem:**
@@ -48,6 +51,8 @@ https://2019shell1.picoctf.com/problem/49886/ or http://2019shell1.picoctf.com:4
 **Hints:**
 
 1. Hmm it doesn't seem to check anyone's password, except for {{name}}'s?
+
+---
 
 ### Lab 3: Open-to-admins (200 pts)
 
@@ -60,6 +65,8 @@ https://2019shell1.picoctf.com/problem/49858/ or http://2019shell1.picoctf.com:4
 
 1. Can cookies help you to get the flag?
 
+---
+
 ### Lab 4: Irish-Name-Repo 1 (300 pts)
 
 **Problem:**
@@ -70,6 +77,8 @@ https://2019shell1.picoctf.com/problem/49858/ or http://2019shell1.picoctf.com:4
 
 1. There doesn't seem to be many ways to interact with this, I wonder if the users are kept in a database?
 2. Try to think about how does the website verify your login?
+
+---
 
 ### Lab 5: JaWT Scratchpad (400 pts, but imo should be 700)
 

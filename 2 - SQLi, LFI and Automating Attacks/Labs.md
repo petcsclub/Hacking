@@ -35,6 +35,8 @@ https://2019shell1.picoctf.com/problem/32255/ or http://2019shell1.picoctf.com:3
 
 1. What is obfuscation?
 
+---
+
 ### Warmup 1: Irish-Name-Repo 1 (300 pts)
 
 **Problem:**
@@ -46,6 +48,8 @@ https://2019shell1.picoctf.com/problem/32255/ or http://2019shell1.picoctf.com:3
 1. There doesn't seem to be many ways to interact with this, I wonder if the users are kept in a database?
 2. Try to think about how does the website verify your login?
 
+---
+
 ### Lab 1: Irish-Name-Repo 2 (350 pts)
 
 **Problem:**
@@ -56,6 +60,7 @@ https://2019shell1.picoctf.com/problem/32255/ or http://2019shell1.picoctf.com:3
 
 1. The password is being filtered.
 
+---
 
 ### Lab 2: Irish-Name-Repo 3 (400 pts)
 
@@ -66,6 +71,8 @@ https://2019shell1.picoctf.com/problem/32255/ or http://2019shell1.picoctf.com:3
 **Hints:**
 
 1. Seems like the password is encrypted.
+
+---
 
 ### Demo 1: cereal hacker 2 (500 pts)
 
@@ -82,6 +89,8 @@ This is not a PicoCTF problem. Can you leak the source code of solution.php?
 **Hints:**
 
 1. Try `php://filter/convert.base64-encode/...`
+
+---
 
 ### Lab 4: http://rfi.warchall.net/
 

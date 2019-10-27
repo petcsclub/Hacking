@@ -1,5 +1,5 @@
 ## Problem Statement
----
+
 
 ### Lab 2: logon (100 pts)
 
@@ -12,7 +12,7 @@
 1. Hmm it doesn't seem to check anyone's password, except for {{name}}'s?
 
 ## Write-Up
----
+
 
 We first notice that *any* username and password combination is allowed, however no flag is displayed.
 

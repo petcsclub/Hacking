@@ -1,5 +1,5 @@
 ## Problem Statement
----
+
 
 ### Lab 4: Irish-Name-Repo 1 (300 pts)
 
@@ -13,7 +13,7 @@
 2. Try to think about how does the website verify your login?
 
 ## Write-Up
----
+
 
 Upon inspecting the login page, we can find a suspicious tag buried in the source:
 ```html

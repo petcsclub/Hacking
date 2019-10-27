@@ -1,5 +1,5 @@
 ## Problem Statement
----
+
 
 ### Lab 3: Open-to-admins (200 pts)
 
@@ -13,6 +13,6 @@ https://2019shell1.picoctf.com/problem/49858/ or http://2019shell1.picoctf.com:4
 1. Can cookies help you to get the flag?
 
 ## Write-Up
----
+
 
 This is similar to Lab 2. Instead, set `admin` to `True` and `time` to `1400`.
