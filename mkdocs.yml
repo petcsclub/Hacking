@@ -36,6 +36,9 @@ extra:
   search:
     language: 'en'
 
+extra_javascript:
+  - 'link.js'
+
 # Extensions
 markdown_extensions:
   - admonition
