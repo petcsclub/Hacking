@@ -1,5 +1,17 @@
 ## Meeting 2: SQLi, LFI and Automating Attacks
 
+## Table of Contents
+- [Resources](#resources)
+- [Labs](#labs)
+  * [Warmup 0: Client-side-again (200 pts)](#warmup-0-client-side-again-200-pts-)
+  * ~~[Warmup 1: Irish-Name-Repo 1 (300 pts)](#warmup-1-irish-name-repo-1-300-pts-)~~
+  * [Lab 1: Irish-Name-Repo 2 (350 pts)](#lab-1-irish-name-repo-2-350-pts-)
+  * ~~[Lab 2: Irish-Name-Repo 3 (400 pts)](#lab-2-irish-name-repo-3-400-pts-)~~
+  * [Demo 1: cereal hacker 2 (500 pts)](#demo-1-cereal-hacker-2-500-pts-)
+  * [Lab 3: http://lfi.warchall.net/](#lab-3-http-lfiwarchallnet-)
+  * [Lab 4: http://rfi.warchall.net/](#lab-4-http-rfiwarchallnet-)
+
+
 ## Resources
 1. [Insomnia REST Client](https://insomnia.rest)
 2. [Send HTTP Requests Online](https://reqbin.com/)
