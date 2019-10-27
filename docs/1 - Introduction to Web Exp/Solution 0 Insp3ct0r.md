@@ -1,6 +1,5 @@
 ## Problem Statement
 
-
 ### Insp3ct0r (50 pts)
 
 **Problem:**
@@ -13,7 +12,6 @@ https://2019shell1.picoctf.com/problem/28717/ or http://2019shell1.picoctf.com:2
 2. There's 3 parts
 
 ## Write-Up
-
 
 Using "View Page Source," we can locate all three parts of the flag.
 

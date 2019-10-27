@@ -1,0 +1,38 @@
+# Project information
+site_name: 'Web Security'
+site_description: 'Web Security and Exploitation Resources for the PET Computer Sciece Club'
+site_author: 'Kevin Dai et al.'
+site_url: 'https://petcsclub.github.io/Hacking'
+
+# Repository
+repo_name: 'petcsclub/Hacking'
+repo_url: 'https://github.com/petcsclub/Hacking'
+
+# Copyright
+copyright: 'Copyright &copy; 2019 - 2020 Kevin Dai'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+# Customization
+extra:
+  manifest: 'manifest.webmanifest'
+  social:
+    - type: 'github'
+      link: 'https://github.com/petcsclub'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true

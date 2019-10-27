@@ -1,15 +1,5 @@
 ## Meeting 1: Introduction to Web Exploitation
 
-## Table of Contents
-- [Table of Contents](#table-of-contents)
-- [Labs](#labs)
-  * [Warmup 0: Insp3ct0r (50 pts)](#warmup-0-insp3ct0r-50-pts)
-  * [Lab 1: dont-use-client-side (100 pts)](#lab-1-dont-use-client-side-100-pts)
-  * [Lab 2: logon (100 pts)](#lab-2-logon-100-pts)
-  * [Lab 3: Open-to-admins (200 pts)](#lab-3-open-to-admins-200-pts)
-  * [Lab 4: Irish-Name-Repo 1 (300 pts)](#lab-4-irish-name-repo-1-300-pts)
-  * [Lab 5: JaWT Scratchpad (400 pts, but imo should be 700)](#lab-5-jawt-scratchpad-400-pts-but-imo-should-be-700)
-
 ## Labs
 
 These problems were taken from the ongoing PicoCTF2019 contest.
@@ -25,7 +15,7 @@ https://2019shell1.picoctf.com/problem/28717/ or http://2019shell1.picoctf.com:2
 1. How do you inspect web code on a browser?
 2. There's 3 parts
 
-**[See Solution](Warmup%200%20-%20Insp3ct0r.md)**
+**[See Solution](../Solution%200%20Insp3ct0r)**
 
 ---
 
@@ -40,6 +30,8 @@ https://2019shell1.picoctf.com/problem/49886/ or http://2019shell1.picoctf.com:4
 
 1. Never trust the client
 
+**[See Solution](../Solution%201%20dont-use-client-side)**
+
 ---
 
 ### Lab 2: logon (100 pts)
@@ -51,6 +43,8 @@ https://2019shell1.picoctf.com/problem/49886/ or http://2019shell1.picoctf.com:4
 **Hints:**
 
 1. Hmm it doesn't seem to check anyone's password, except for {{name}}'s?
+
+**[See Solution](../Solution%202%20logon)**
 
 ---
 
@@ -65,6 +59,8 @@ https://2019shell1.picoctf.com/problem/49858/ or http://2019shell1.picoctf.com:4
 
 1. Can cookies help you to get the flag?
 
+**[See Solution](../Solution%203%20Open-to-admins)**
+
 ---
 
 ### Lab 4: Irish-Name-Repo 1 (300 pts)
@@ -78,6 +74,8 @@ https://2019shell1.picoctf.com/problem/49858/ or http://2019shell1.picoctf.com:4
 1. There doesn't seem to be many ways to interact with this, I wonder if the users are kept in a database?
 2. Try to think about how does the website verify your login?
 
+**[See Solution](../Solution%204%20Irish-Name-Repo%201)**
+
 ---
 
 ### Lab 5: JaWT Scratchpad (400 pts, but imo should be 700)
@@ -90,3 +88,5 @@ https://2019shell1.picoctf.com/problem/49858/ or http://2019shell1.picoctf.com:4
 
 1. What is that cookie?
 2. Have you heard of JWT?
+
+**[See Solution](../Solution%205%20JaWT%20Scratchpad)**

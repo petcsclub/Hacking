@@ -6,7 +6,7 @@ This is a rough guideline to help you identify the vulnerabilities in a web appl
 ## What was that acronym?
 Sometimes we're too lazy to type out the full word, so I've compiled a nice list of acronyms for you to look up. Sometimes we use fancy jargon that no one understands. **[Click here for an amazing list](#jargon-decoder).**
 
-# Start here...
+## Start here...
 
 Haha, I made this up.
 
@@ -27,7 +27,7 @@ You found and verified the vulnerability and need to complete the full exploit. 
 
 **If this is you, click here.**
 
-# Jargon Decoder
+## Jargon Decoder
 
 Thank you Wikipedia.
 
