@@ -46,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.65037d2e.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.76141488.css">
       
       
         
@@ -57,7 +57,7 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../../assets/javascripts/modernizr.7c543f66.js"></script>
     
     
       
@@ -72,6 +72,9 @@
     
     
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    
       
     
     
@@ -79,7 +82,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="black" data-md-color-accent="red">
+    <body dir="ltr" data-md-color-primary="black" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -623,7 +626,7 @@
 <h3 id="lab-2-logon-100-pts">Lab 2: logon (100 pts)<a class="headerlink" href="#lab-2-logon-100-pts" title="Permanent link">&para;</a></h3>
 <p><strong>Problem:</strong></p>
 <blockquote>
-<p>The factory is hiding things from all of its users. Can you login as logon and find what they've been looking at? https://2019shell1.picoctf.com/problem/47307/ or http://2019shell1.picoctf.com:47307</p>
+<p>The factory is hiding things from all of its users. Can you login as logon and find what they've been looking at? <a href="https://2019shell1.picoctf.com/problem/47307/">https://2019shell1.picoctf.com/problem/47307/</a> or <a href="http://2019shell1.picoctf.com:47307">http://2019shell1.picoctf.com:47307</a></p>
 </blockquote>
 <p><strong>Hints:</strong></p>
 <ol>
@@ -646,7 +649,6 @@
 &lt; Set-Cookie: username=test; Path=/
 &lt; Set-Cookie: admin=False; Path=/
 </pre></div>
-
 
 <p>Therefore, changing the cookie <code>admin</code> from <code>False</code> to <code>True</code> and reloading the webpage allows us to see the flag.</p>
 <p><strong>Note:</strong> You can change cookie values through the inspector (on Chrome its usually under Application -&gt; Cookies), however that method is sometimes not optimal. Instead, you can open up the Inspector and under Console, type <code>document.cookie="keyofcookie=valueofcookie"</code> to change cookies.</p>
@@ -730,9 +732,11 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.ac79c3b0.js"></script>
+      <script src="../../../assets/javascripts/application.431a7d43.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+        <script src="../../../link.js"></script>
       
     
   </body>
