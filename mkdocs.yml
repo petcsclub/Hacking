@@ -1,0 +1,65 @@
+# Project information
+site_name: 'Web Security and Exploitation'
+site_description: 'Web Security and Exploitation Resources for the PET Computer Sciece Club'
+site_author: 'Kevin Dai et al.'
+site_url: 'https://petcsclub.github.io/Hacking'
+
+# Repository
+repo_name: 'petcsclub/Hacking'
+repo_url: 'https://github.com/petcsclub/Hacking'
+
+# Copyright
+copyright: 'Copyright &copy; 2019 - 2020 Kevin Dai'
+
+# Configuration
+theme:
+  name: 'material'
+  custom_dir: 'material/'
+  language: 'en'
+  palette:
+    primary: 'black'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  feature:
+    tabs: true
+  language: 'en'
+  logo:
+    icon: 'public'
+
+# Customization
+extra:
+  manifest: 'manifest.webmanifest'
+  social:
+    - type: 'github'
+      link: 'https://github.com/petcsclub'
+  search:
+    language: 'en'
+
+extra_javascript:
+  - 'link.js'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
