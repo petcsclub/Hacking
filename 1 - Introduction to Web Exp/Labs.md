@@ -26,6 +26,8 @@ https://2019shell1.picoctf.com/problem/28717/ or http://2019shell1.picoctf.com:2
 1. How do you inspect web code on a browser?
 2. There's 3 parts
 
+**[See Solution](Warmup%200%20-%20Insp3ct0r.md)**
+
 ### Lab 1: dont-use-client-side (100 pts)
 
 **Problem:**
