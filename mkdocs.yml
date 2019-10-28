@@ -14,7 +14,7 @@ copyright: 'Copyright &copy; 2019 - 2020 Kevin Dai'
 # Configuration
 theme:
   name: 'material'
-  custom_dir: 'material/'
+  custom_dir: 'docs-materialtheme/'
   language: 'en'
   palette:
     primary: 'black'

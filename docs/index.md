@@ -2,6 +2,9 @@ title: Home
 
 # Hacking
 
+!!! danger "Please learn to read carefully."
+    Many people end up skimming over certain documents. You might be one of those people. You will **miss important information**. I can only do so much to **bold** and *highlight* key ideas, but if you skip on the details, be prepared to be very frustrated when wondering why nothing works.
+
 **Looking for the cheat sheet? It's [here](cheat_sheet)!**
 
 Welcome to our GitHub website. All resources located in our main branch can be found under Resources.
