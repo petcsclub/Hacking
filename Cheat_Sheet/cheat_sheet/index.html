@@ -13,7 +13,7 @@
         <meta name="description" content="Web Security and Exploitation Resources for the PET Computer Sciece Club">
       
       
-        <link rel="canonical" href="https://petcsclub.github.io/Hacking/inspect/">
+        <link rel="canonical" href="https://petcsclub.github.io/Hacking/Cheat_Sheet/cheat_sheet/">
       
       
         <meta name="author" content="Kevin Dai et al.">
@@ -37,18 +37,18 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
-        <title>DevTools Tutorial</title>
+        <title>Summary</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.65037d2e.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.65037d2e.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.76141488.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.76141488.css">
       
       
         
@@ -57,7 +57,7 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.7c543f66.js"></script>
+      <script src="../../assets/javascripts/modernizr.7c543f66.js"></script>
     
     
       
@@ -66,9 +66,9 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
-      <link rel="manifest" href="../manifest.webmanifest">
+      <link rel="manifest" href="../../manifest.webmanifest">
     
     
     
@@ -96,7 +96,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#chrome-dev-tools-aka-inspect-element" tabindex="1" class="md-skip">
+      <a href="#cheat-sheet" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -122,7 +122,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                DevTools Tutorial
+                Summary
               
             </span>
           
@@ -190,14 +190,16 @@
       
         
 
-<nav class="md-tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href=".." class="md-tabs__link md-tabs__link--active">
+      <a href="../.." class="md-tabs__link">
         Home
       </a>
     
@@ -213,7 +215,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../About_Us/disclaimer/" class="md-tabs__link">
+        <a href="../../About_Us/disclaimer/" class="md-tabs__link">
           About Us
         </a>
       
@@ -226,7 +228,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../Cheat_Sheet/cheat_sheet/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link md-tabs__link--active">
           Cheat Sheet
         </a>
       
@@ -243,7 +245,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../Resources/1 - Introduction to Web Exp/Labs/" class="md-tabs__link">
+        <a href="../../Resources/1 - Introduction to Web Exp/Labs/" class="md-tabs__link">
           Resources
         </a>
       
@@ -302,7 +304,7 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Home" class="md-nav__link">
+    <a href="../.." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -312,111 +314,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        DevTools Tutorial
-      </label>
-    
-    <a href="./" title="DevTools Tutorial" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../inspect/" title="DevTools Tutorial" class="md-nav__link">
       DevTools Tutorial
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#network" class="md-nav__link">
-    Network
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#the-basics" class="md-nav__link">
-    The Basics
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-to-use" class="md-nav__link">
-    How to Use
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#life-hacks" class="md-nav__link">
-    Life Hacks
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-vieweditdelete-stored-cookies" class="md-nav__link">
-    How to View/Edit/Delete Stored Cookies
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#but-i-use-firefox" class="md-nav__link">
-    But I use Firefox!
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#but-i-use-edge" class="md-nav__link">
-    But I use Edge!
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#but-i-use-safari" class="md-nav__link">
-    But I use Safari!
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#but-i-use-insert-some-random-browser-here" class="md-nav__link">
-    But I use [insert some random browser here]!
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -426,7 +328,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../sqli/" title="SQL Injections" class="md-nav__link">
+    <a href="../../sqli/" title="SQL Injections" class="md-nav__link">
       SQL Injections
     </a>
   </li>
@@ -457,7 +359,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../About_Us/disclaimer/" title="Disclaimer" class="md-nav__link">
+    <a href="../../About_Us/disclaimer/" title="Disclaimer" class="md-nav__link">
       Disclaimer
     </a>
   </li>
@@ -472,10 +374,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       Cheat Sheet
@@ -491,11 +395,90 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../Cheat_Sheet/cheat_sheet/" title="Summary" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Summary
+      </label>
+    
+    <a href="./" title="Summary" class="md-nav__link md-nav__link--active">
       Summary
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-this-for" class="md-nav__link">
+    What is this for?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-was-that-acronym" class="md-nav__link">
+    What was that acronym?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yes-but-what-exactly-is-this-thing-think-ree" class="md-nav__link">
+    Yes, but what exactly is this thing? Think R.E.E.!
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-reconnaissance" class="md-nav__link">
+    1. Reconnaissance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-engagement" class="md-nav__link">
+    2. Engagement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-exploitationexfiltration" class="md-nav__link">
+    3. Exploitation/Exfiltration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -505,7 +488,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Cheat_Sheet/d1_recon/" title="1. Reconnaissance" class="md-nav__link">
+    <a href="../d1_recon/" title="1. Reconnaissance" class="md-nav__link">
       1. Reconnaissance
     </a>
   </li>
@@ -517,7 +500,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Cheat_Sheet/d2_engage/" title="2. Engage" class="md-nav__link">
+    <a href="../d2_engage/" title="2. Engage" class="md-nav__link">
       2. Engage
     </a>
   </li>
@@ -529,7 +512,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Cheat_Sheet/d3_exploit/" title="3. Exploitation" class="md-nav__link">
+    <a href="../d3_exploit/" title="3. Exploitation" class="md-nav__link">
       3. Exploitation
     </a>
   </li>
@@ -541,7 +524,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Cheat_Sheet/z1_jargon/" title="Jargon" class="md-nav__link">
+    <a href="../z1_jargon/" title="Jargon" class="md-nav__link">
       Jargon
     </a>
   </li>
@@ -596,7 +579,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Resources/1 - Introduction to Web Exp/Labs/" title="Meeting 1 Labs" class="md-nav__link">
+    <a href="../../Resources/1 - Introduction to Web Exp/Labs/" title="Meeting 1 Labs" class="md-nav__link">
       Meeting 1 Labs
     </a>
   </li>
@@ -608,7 +591,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Resources/1 - Introduction to Web Exp/Solution 0 Insp3ct0r/" title="Solution 0 Insp3ct0r" class="md-nav__link">
+    <a href="../../Resources/1 - Introduction to Web Exp/Solution 0 Insp3ct0r/" title="Solution 0 Insp3ct0r" class="md-nav__link">
       Solution 0 Insp3ct0r
     </a>
   </li>
@@ -620,7 +603,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Resources/1 - Introduction to Web Exp/Solution 1 dont-use-client-side/" title="Solution 1 dont use client side" class="md-nav__link">
+    <a href="../../Resources/1 - Introduction to Web Exp/Solution 1 dont-use-client-side/" title="Solution 1 dont use client side" class="md-nav__link">
       Solution 1 dont use client side
     </a>
   </li>
@@ -632,7 +615,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Resources/1 - Introduction to Web Exp/Solution 2 logon/" title="Solution 2 logon" class="md-nav__link">
+    <a href="../../Resources/1 - Introduction to Web Exp/Solution 2 logon/" title="Solution 2 logon" class="md-nav__link">
       Solution 2 logon
     </a>
   </li>
@@ -644,7 +627,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Resources/1 - Introduction to Web Exp/Solution 3 Open-to-admins/" title="Solution 3 Open to admins" class="md-nav__link">
+    <a href="../../Resources/1 - Introduction to Web Exp/Solution 3 Open-to-admins/" title="Solution 3 Open to admins" class="md-nav__link">
       Solution 3 Open to admins
     </a>
   </li>
@@ -656,7 +639,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Resources/1 - Introduction to Web Exp/Solution 4 Irish-Name-Repo 1/" title="Solution 4 Irish Name Repo 1" class="md-nav__link">
+    <a href="../../Resources/1 - Introduction to Web Exp/Solution 4 Irish-Name-Repo 1/" title="Solution 4 Irish Name Repo 1" class="md-nav__link">
       Solution 4 Irish Name Repo 1
     </a>
   </li>
@@ -668,7 +651,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Resources/1 - Introduction to Web Exp/Solution 5 JaWT Scratchpad/" title="Solution 5 JaWT Scratchpad" class="md-nav__link">
+    <a href="../../Resources/1 - Introduction to Web Exp/Solution 5 JaWT Scratchpad/" title="Solution 5 JaWT Scratchpad" class="md-nav__link">
       Solution 5 JaWT Scratchpad
     </a>
   </li>
@@ -704,7 +687,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Resources/2 - SQLi, LFI and Automating Attacks/Labs/" title="Meeting 2 Labs" class="md-nav__link">
+    <a href="../../Resources/2 - SQLi, LFI and Automating Attacks/Labs/" title="Meeting 2 Labs" class="md-nav__link">
       Meeting 2 Labs
     </a>
   </li>
@@ -740,7 +723,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Resources/3 - Introduction to Python/Notes/" title="Meeting 3 & 4 Notes" class="md-nav__link">
+    <a href="../../Resources/3 - Introduction to Python/Notes/" title="Meeting 3 & 4 Notes" class="md-nav__link">
       Meeting 3 & 4 Notes
     </a>
   </li>
@@ -777,71 +760,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#network" class="md-nav__link">
-    Network
+  <a href="#what-is-this-for" class="md-nav__link">
+    What is this for?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-was-that-acronym" class="md-nav__link">
+    What was that acronym?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yes-but-what-exactly-is-this-thing-think-ree" class="md-nav__link">
+    Yes, but what exactly is this thing? Think R.E.E.!
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-basics" class="md-nav__link">
-    The Basics
+  <a href="#1-reconnaissance" class="md-nav__link">
+    1. Reconnaissance
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#how-to-use" class="md-nav__link">
-    How to Use
+  <a href="#2-engagement" class="md-nav__link">
+    2. Engagement
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#life-hacks" class="md-nav__link">
-    Life Hacks
+  <a href="#3-exploitationexfiltration" class="md-nav__link">
+    3. Exploitation/Exfiltration
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-vieweditdelete-stored-cookies" class="md-nav__link">
-    How to View/Edit/Delete Stored Cookies
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#but-i-use-firefox" class="md-nav__link">
-    But I use Firefox!
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#but-i-use-edge" class="md-nav__link">
-    But I use Edge!
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#but-i-use-safari" class="md-nav__link">
-    But I use Safari!
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#but-i-use-insert-some-random-browser-here" class="md-nav__link">
-    But I use [insert some random browser here]!
-  </a>
   
 </li>
       
@@ -861,89 +823,33 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/petcsclub/Hacking/edit/master/docs/inspect.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/petcsclub/Hacking/edit/master/docs/Cheat_Sheet/cheat_sheet.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="chrome-dev-tools-aka-inspect-element">Chrome Dev Tools aka Inspect Element<a class="headerlink" href="#chrome-dev-tools-aka-inspect-element" title="Permanent link">&para;</a></h1>
-<h2 id="network">Network<a class="headerlink" href="#network" title="Permanent link">&para;</a></h2>
-<h3 id="the-basics">The Basics<a class="headerlink" href="#the-basics" title="Permanent link">&para;</a></h3>
-<p>For a very basic tutorial on how to use the network tab, see <a href="https://developers.google.com/web/tools/chrome-devtools/network#open">here</a>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>If your Google Chrome does not work, you can switch to a different browser such as Microsoft Edge. Sometime Inspect Element will not work if you are logged into your YRDSB email when using the browser.</p>
-</div>
-<h3 id="how-to-use">How to Use<a class="headerlink" href="#how-to-use" title="Permanent link">&para;</a></h3>
+                <h1 id="cheat-sheet">Cheat Sheet<a class="headerlink" href="#cheat-sheet" title="Permanent link">&para;</a></h1>
+<h2 id="what-is-this-for">What is this for?<a class="headerlink" href="#what-is-this-for" title="Permanent link">&para;</a></h2>
+<p>This is a rough guideline to help you identify the vulnerabilities in a web application. When attacking a website, consider the questions being asked and follow the steps to an easy pwn! This guide will be updated before each meeting.</p>
+<h2 id="what-was-that-acronym">What was that acronym?<a class="headerlink" href="#what-was-that-acronym" title="Permanent link">&para;</a></h2>
+<p>Sometimes we're too lazy to type out the full word, so I've compiled a nice list of acronyms for you to look up. Sometimes we use fancy jargon that no one understands.<br />
+<strong><a href="../z1_jargon/">Click here for an amazing list</a>.</strong></p>
+<h2 id="yes-but-what-exactly-is-this-thing-think-ree">Yes, but what exactly is this thing? <em>Think R.E.E.!</em><a class="headerlink" href="#yes-but-what-exactly-is-this-thing-think-ree" title="Permanent link">&para;</a></h2>
+<p>3 easy steps to weight loss! Just kidding. These are what I believe to be the 3 steps in approaching and performing a successful exploit on a website.</p>
+<h3 id="1-reconnaissance">1. Reconnaissance<a class="headerlink" href="#1-reconnaissance" title="Permanent link">&para;</a></h3>
+<p>You don't know anything about the website yet. You are trying to identify the attack surface and possible vulnerabilities. You still need to identify the objective (i.e., RCE, Authentication, Leaking Code etc...).  </p>
 <div class="admonition success">
-<p class="admonition-title">Always read the official documentation!</p>
-<p>This is just a <em>very basic</em> run-down of the <a href="https://developers.google.com/web/tools/chrome-devtools">Chrome DevTools</a>. For more information, see the official Chrome DevTools documentation. Their beautifully written documentation covers more in-depth topics. <a href="https://developers.google.com/web/tools/chrome-devtools/network/reference">Click here</a> for their reference!</p>
+<p class="admonition-title"><strong>If this is you, <a href="../d1_recon/">click here</a>.</strong></p>
 </div>
-<ol>
-<li>Click on an entry to bring it up. The entries, by default, are sorted downwards by time (the bottom-most entry will be the most recent request).<br /><br />
-<img alt="" src="../Images/Inspect3.PNG" /></li>
-<li>Take note of important fields:<br /><br />
-<img alt="" src="../Images/Inspect4.PNG" /></li>
-<li>
-<p>You should see 6 tabs: Headers, Preview, Response, Timing, Cookies and Initiator.</p>
-<ul>
-<li>Under the <strong>Headers</strong> tabs, you should see the complete HTTP request <em>and</em> response being sent/received. Especially take note of the values under the <strong>General</strong> and <strong>Query String Parameters</strong> sections. Under the <strong>Request Headers</strong> section, watch out for the <code>Content-Type</code> field (if it exists).</li>
-</ul>
-<details class="note"><summary>Note</summary><p>During a <code>POST</code> request, if the <code>content-type</code> is <code>application/x-www-form-urlencoded</code>, then you will see a <strong>Form Data</strong> section instead of a <strong>Query String Parameters</strong>.</p>
-</details>
-<details class="tip"><summary>Tip</summary><p>Since Chrome nicely interprets the data for you, you can click "View Source" to see the raw data being sent:
-<img alt="" src="../Images/Inspect5.PNG" /><br />
-Can you guess what the source of the above data would be? That's right! It's <code>username=aa&amp;password=bb</code></p>
-</details>
-<ul>
-<li>Under the <strong>Preview</strong> tab, you should see the human-readable formatted/parsed response from the server. If the response is in JSON, then Chrome will format it into a tree/accordion. If the response is a HTML document, the Chrome will render the document for you. Here's an example of a formatted JSON preview:<br /><br />
-<img alt="" src="../Images/Inspect6.PNG" /> </li>
-<li>Under the <strong>Response</strong> tab, you should see the raw unformatted data that the server sent back.</li>
-<li>Under the <strong>Cookies</strong> tab, you should see all the cookies the server sent back.</li>
-</ul>
-</li>
-</ol>
-<h3 id="life-hacks">Life Hacks<a class="headerlink" href="#life-hacks" title="Permanent link">&para;</a></h3>
-<p>You can open the Inspect Element window with the shortcut <code>Ctrl-Shift-I</code> on PC.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>When the website refreshes, you will loose all your previous logs (and possibly important information).</p>
-</div>
-<p>To avoid this, click <code>Preserve Log</code> (as shown below):  </p>
-<p><img alt="" src="../Images/Inspect0.PNG" /></p>
-<div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>When your logs become too messy, you should clear it to avoid confusing yourself!</p>
-</div>
-<p>To clear your logs, click the "Clear" button:  </p>
-<p><img alt="" src="../Images/Inspect1.PNG" /></p>
-<p>Click on the "Filter" icon to bring up the possible filter options. Sometimes, you may wish to find only particular queries. For example, you can filter out everything except XHR (XmlHttpRequests) by clicking the "XHR" button.</p>
-<p><img alt="" src="../Images/Inspect2.PNG" /></p>
-<h2 id="how-to-vieweditdelete-stored-cookies">How to View/Edit/Delete Stored Cookies<a class="headerlink" href="#how-to-vieweditdelete-stored-cookies" title="Permanent link">&para;</a></h2>
+<h3 id="2-engagement">2. Engagement<a class="headerlink" href="#2-engagement" title="Permanent link">&para;</a></h3>
+<p>You have found a possible vulnerability and are trying to exploit it now. You still need to verify if this vulnerability can lead to what you want. It is possible that you find a vulnerability/bug that is completely useless to you.</p>
 <div class="admonition success">
-<p class="admonition-title">Always read the official documentation!</p>
-<p>There's no use to writing anything if you can just see a better version <a href="https://developers.google.com/web/tools/chrome-devtools/storage/cookies">here</a>!</p>
+<p class="admonition-title"><strong>If this is you, <a href="../d2_engage/">click here</a>.</strong></p>
 </div>
-<h2 id="but-i-use-firefox">But I use Firefox!<a class="headerlink" href="#but-i-use-firefox" title="Permanent link">&para;</a></h2>
-<p>Well, you're in luck my friend. Just like Chrome, Mozilla has very detailed documentation on their <a href="https://developer.mozilla.org/en-US/docs/Tools">DevTools here</a>.</p>
-<div class="admonition example">
-<p class="admonition-title">I want to see the network tools!</p>
-<p>For a general overview, see <a href="https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor">here</a>.<br />
-To learn about deciphering request details, click <a href="https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor/request_details">here</a>.<br />
-To learn about the network request list, click <a href="https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor/request_list">here</a>.</p>
+<h3 id="3-exploitationexfiltration">3. Exploitation/Exfiltration<a class="headerlink" href="#3-exploitationexfiltration" title="Permanent link">&para;</a></h3>
+<p>You found and verified the vulnerability and need to complete the full exploit. This is where you can (if you want) write a script to complete the exploit.</p>
+<div class="admonition success">
+<p class="admonition-title"><strong>If this is you, <a href="../d3_exploit/">click here</a>.</strong></p>
 </div>
-<div class="admonition example">
-<p class="admonition-title">What about cookies?</p>
-<p>You thought I forgot? <a href="https://developer.mozilla.org/en-US/docs/Tools/Storage_Inspector#Cookies">No way!</a></p>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Note</p>
-<p>Mozilla has categorized their DevTools into two distinct categories: "Core Tools" and "More Tools". If you can't find something, be sure to check both categories!</p>
-</div>
-<h2 id="but-i-use-edge">But I use Edge!<a class="headerlink" href="#but-i-use-edge" title="Permanent link">&para;</a></h2>
-<p>I hope that by now, you've learned to <a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide">read the documentation</a>.</p>
-<h2 id="but-i-use-safari">But I use Safari!<a class="headerlink" href="#but-i-use-safari" title="Permanent link">&para;</a></h2>
-<p>Again, <a href="https://support.apple.com/en-ca/guide/safari-developer/welcome/mac">read the documentation</a>. Just saying, the Apple documentations suck. Why don't you try <a href="https://www.google.com/chrome/">Chrome</a>?</p>
-<h2 id="but-i-use-insert-some-random-browser-here">But I use [insert some random browser here]!<a class="headerlink" href="#but-i-use-insert-some-random-browser-here" title="Permanent link">&para;</a></h2>
-<p>Why don't you try Googling "[some random browser] devtools documentation". You're bound to find <em>something</em>.</p>
+<p><br /></p>
                 
                   
                 
@@ -964,7 +870,7 @@ To learn about the network request list, click <a href="https://developer.mozill
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../About_Us/disclaimer/" title="Disclaimer" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -973,19 +879,19 @@ To learn about the network request list, click <a href="https://developer.mozill
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Home
+                Disclaimer
               </span>
             </div>
           </a>
         
         
-          <a href="../sqli/" title="SQL Injections" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../d1_recon/" title="1. Reconnaissance" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                SQL Injections
+                1. Reconnaissance
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1012,7 +918,7 @@ To learn about the network request list, click <a href="https://developer.mozill
       </div>
       
   <div class="md-footer-social">
-    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
     
       <a href="https://github.com/petcsclub" class="md-footer-social__link fa fa-github"></a>
     
@@ -1024,11 +930,11 @@ To learn about the network request list, click <a href="https://developer.mozill
       
     </div>
     
-      <script src="../assets/javascripts/application.431a7d43.js"></script>
+      <script src="../../assets/javascripts/application.431a7d43.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
-        <script src="../link.js"></script>
+        <script src="../../link.js"></script>
       
     
   </body>
