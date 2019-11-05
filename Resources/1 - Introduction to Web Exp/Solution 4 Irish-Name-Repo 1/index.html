@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Web Security and Exploitation Resources for the PET Computer Sciece Club">
+        <meta name="description" content="Web Security and Exploitation Resources for the PET Computer Science Club">
       
       
         <link rel="canonical" href="https://petcsclub.github.io/Hacking/Resources/1 - Introduction to Web Exp/Solution 4 Irish-Name-Repo 1/">
@@ -711,6 +711,66 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4" type="checkbox" id="nav-6-4">
+    
+    <label class="md-nav__link" for="nav-6-4">
+      6   SQLi and Fuzzing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-4">
+        6   SQLi and Fuzzing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../6 - SQLi and Fuzzing/Fuzzer/" title="Homebrew SQLi Fuzzer!" class="md-nav__link">
+      Homebrew SQLi Fuzzer!
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../6 - SQLi and Fuzzing/List/" title="Sample Fuzzing Results" class="md-nav__link">
+      Sample Fuzzing Results
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../6 - SQLi and Fuzzing/Notes/" title="Notes and Lab" class="md-nav__link">
+      Notes and Lab
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -795,19 +855,27 @@
 </ol>
 <h2 id="write-up">Write-Up<a class="headerlink" href="#write-up" title="Permanent link">&para;</a></h2>
 <p>Upon inspecting the login page, we can find a suspicious tag buried in the source:
-<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;debug&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;0&quot;</span><span class="p">&gt;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;debug&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;0&quot;</span><span class="p">&gt;</span>
 </pre></div>
+</td></tr></table>
 Setting the value to <code>1</code> and entering some username and password shows:
-<div class="codehilite"><pre><span></span>username: admin
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>username: admin
 password: admin
 SQL query: SELECT * FROM users WHERE name=&#39;admin&#39; AND password=&#39;admin&#39;
 Login failed.
-</pre></div></p>
+</pre></div>
+</td></tr></table></p>
 <p>Notice the SQL query. Setting the username to a single quote (<code>'</code>) and logging in results in:
-<div class="codehilite"><pre><span></span>username: &#39;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>username: &#39;
 password: 
 SQL query: SELECT * FROM users WHERE name=&#39;&#39;&#39; AND password=&#39;&#39;
-</pre></div></p>
+</pre></div>
+</td></tr></table></p>
 <p>Reviewing the network activity shows a return code of <code>500: Internal Server Error</code>. This indicates the absence of proper SQL filtering. A simple SQL injection of <code>' OR 1==1--</code> brings us into the mainframe :).</p>
                 
                   

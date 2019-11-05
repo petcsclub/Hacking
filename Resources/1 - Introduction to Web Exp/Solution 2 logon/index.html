@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Web Security and Exploitation Resources for the PET Computer Sciece Club">
+        <meta name="description" content="Web Security and Exploitation Resources for the PET Computer Science Club">
       
       
         <link rel="canonical" href="https://petcsclub.github.io/Hacking/Resources/1 - Introduction to Web Exp/Solution 2 logon/">
@@ -711,6 +711,66 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4" type="checkbox" id="nav-6-4">
+    
+    <label class="md-nav__link" for="nav-6-4">
+      6   SQLi and Fuzzing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-4">
+        6   SQLi and Fuzzing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../6 - SQLi and Fuzzing/Fuzzer/" title="Homebrew SQLi Fuzzer!" class="md-nav__link">
+      Homebrew SQLi Fuzzer!
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../6 - SQLi and Fuzzing/List/" title="Sample Fuzzing Results" class="md-nav__link">
+      Sample Fuzzing Results
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../6 - SQLi and Fuzzing/Notes/" title="Notes and Lab" class="md-nav__link">
+      Notes and Lab
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -795,7 +855,19 @@
 <h2 id="write-up">Write-Up<a class="headerlink" href="#write-up" title="Permanent link">&para;</a></h2>
 <p>We first notice that <em>any</em> username and password combination is allowed, however no flag is displayed.</p>
 <p>Inspecting web traffic, notice that the server sends back 3 cookies (namely <code>admin</code>, <code>username</code> and <code>password</code>) when logging in:</p>
-<div class="codehilite"><pre><span></span>&lt; HTTP/1.1 302 FOUND
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&lt; HTTP/1.1 302 FOUND
 &lt; Server: nginx
 &lt; Date: Mon, 07 Oct 2019 23:20:22 GMT
 &lt; Content-Type: text/html; charset=utf-8
@@ -809,6 +881,7 @@
 &lt; Set-Cookie: username=test; Path=/
 &lt; Set-Cookie: admin=False; Path=/
 </pre></div>
+</td></tr></table>
 
 <p>Therefore, changing the cookie <code>admin</code> from <code>False</code> to <code>True</code> and reloading the webpage allows us to see the flag.</p>
 <p><strong>Note:</strong> You can change cookie values through the inspector (on Chrome its usually under Application -&gt; Cookies), however that method is sometimes not optimal. Instead, you can open up the Inspector and under Console, type <code>document.cookie="keyofcookie=valueofcookie"</code> to change cookies.</p>

@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Web Security and Exploitation Resources for the PET Computer Sciece Club">
+        <meta name="description" content="Web Security and Exploitation Resources for the PET Computer Science Club">
       
       
         <link rel="canonical" href="https://petcsclub.github.io/Hacking/Resources/1 - Introduction to Web Exp/Solution 1 dont-use-client-side/">
@@ -698,6 +698,66 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4" type="checkbox" id="nav-6-4">
+    
+    <label class="md-nav__link" for="nav-6-4">
+      6   SQLi and Fuzzing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-4">
+        6   SQLi and Fuzzing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../6 - SQLi and Fuzzing/Fuzzer/" title="Homebrew SQLi Fuzzer!" class="md-nav__link">
+      Homebrew SQLi Fuzzer!
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../6 - SQLi and Fuzzing/List/" title="Sample Fuzzing Results" class="md-nav__link">
+      Sample Fuzzing Results
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../6 - SQLi and Fuzzing/Notes/" title="Notes and Lab" class="md-nav__link">
+      Notes and Lab
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -768,7 +828,14 @@
 </ol>
 <h2 id="write-up">Write-Up<a class="headerlink" href="#write-up" title="Permanent link">&para;</a></h2>
 <p>Locating this chunk of the code:</p>
-<div class="codehilite"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="nx">checkpass</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">split</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;pico&#39;</span><span class="p">)</span> <span class="p">{</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="nx">checkpass</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">split</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;pico&#39;</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">checkpass</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="nx">split</span><span class="o">*</span><span class="mi">6</span><span class="p">,</span> <span class="nx">split</span><span class="o">*</span><span class="mi">7</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;e2f2&#39;</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">checkpass</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="nx">split</span><span class="p">,</span> <span class="nx">split</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;CTF{&#39;</span><span class="p">)</span> <span class="p">{</span>
      <span class="k">if</span> <span class="p">(</span><span class="nx">checkpass</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="nx">split</span><span class="o">*</span><span class="mi">4</span><span class="p">,</span> <span class="nx">split</span><span class="o">*</span><span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;ts_p&#39;</span><span class="p">)</span> <span class="p">{</span>
@@ -777,6 +844,7 @@
           <span class="k">if</span> <span class="p">(</span><span class="nx">checkpass</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="nx">split</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="nx">split</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span><span class="s1">&#39;no_c&#39;</span><span class="p">)</span> <span class="p">{</span>
             <span class="k">if</span> <span class="p">(</span><span class="nx">checkpass</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="nx">split</span><span class="o">*</span><span class="mi">7</span><span class="p">,</span> <span class="nx">split</span><span class="o">*</span><span class="mi">8</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;4&#39;</span><span class="p">)</span> <span class="p">{</span>
 </pre></div>
+</td></tr></table>
 
 <p>We can deduce the probable order of the flag through the number multiplied by <code>split</code>. For instance, the piece associated with <code>split</code> goes before <code>split*2</code> which goes before <code>split*3</code> etc... Note that the fragments of the flag is surrounded by single quotes i.e., <code>'some text'</code>.</p>
 <p>To learn more about Javascript, I've included a link to a cheat sheet:
