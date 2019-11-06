@@ -866,7 +866,8 @@
 <span class="n">rp</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;result.txt&#39;</span><span class="p">,</span><span class="s2">&quot;w+&quot;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></li>
-<li>Ok, this is where the magic happens. We will send each line of <code>fuzz.txt</code> to the server and record the response. We will then mark the responses that look suspicious:
+<li>
+<p>Ok, this is where the magic happens. We will send each line of <code>fuzz.txt</code> to the server and record the response. We will then mark the responses that look suspicious:
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -878,33 +879,60 @@
  9
 10
 11
-12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Start for</span>
+12
+13
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Start for</span>
 <span class="k">print</span> <span class="s2">&quot;Printing errored responses...</span><span class="se">\n</span><span class="s2">&quot;</span>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">fp</span><span class="p">):</span>
-<span class="hll">    <span class="n">response</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;TODO URL HERE&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="p">{</span> <span class="s1">&#39;item&#39;</span><span class="p">:</span> <span class="n">line</span> <span class="p">})</span>
-</span>    <span class="n">jquery</span> <span class="o">=</span> <span class="n">pq</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+<span class="n">rp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Printing errored responses...</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="hll"><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">fp</span><span class="p">):</span>
+</span>    <span class="n">response</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;TODO URL HERE&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="p">{</span> <span class="s1">&#39;item&#39;</span><span class="p">:</span> <span class="n">line</span> <span class="p">})</span>
+    <span class="n">jquery</span> <span class="o">=</span> <span class="n">pq</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">jquery</span><span class="p">(</span><span class="s1">&#39;.card .card-content .content&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">html</span><span class="p">()</span>
     <span class="n">allResponses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">line</span><span class="p">))</span>
-    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">:</span>
-<span class="hll">        <span class="k">print</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">line</span><span class="p">),</span> 
-</span>    <span class="k">elif</span> <span class="n">result</span> <span class="o">!=</span> <span class="n">line</span> <span class="ow">and</span> <span class="n">result</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
+<span class="hll">    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">:</span>
+</span>        <span class="k">print</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">line</span><span class="p">),</span> 
+        <span class="n">rp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">line</span><span class="p">))</span>
+    <span class="k">elif</span> <span class="n">result</span> <span class="o">!=</span> <span class="n">line</span> <span class="ow">and</span> <span class="n">result</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
         <span class="n">suspiciousResponses</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">SequenceMatcher</span><span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="n">line</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span><span class="o">.</span><span class="n">ratio</span><span class="p">(),</span> <span class="n">i</span><span class="p">))</span>
 <span class="c1"># End for</span>
 </pre></div>
-</td></tr></table><ul>
+</td></tr></table></p>
+<ul>
 <li>In the <a href="../Notes/">Lab Notes</a>, under Section 1 step 7, you recorded another <strong>Request Url</strong>.</li>
 <li>Replace <code>TODO URL HERE</code> with that <strong>Request Url</strong> you found.</li>
 <li>On line 9, we print all the <strong>errored</strong> responses and their response code.</li>
 </ul>
 </li>
-<li>Now we gotta clean up our mess:
+<li>
+<p>Now we have to print out all our suspicious responses:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">print</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">Printing suspicious responses...&quot;</span>
+<span class="n">rp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">Printing suspicious responses...</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">suspiciousResponses</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">tup</span><span class="p">:</span> <span class="n">tup</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="c1"># Start for</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">suspiciousResponses</span><span class="p">:</span>
+    <span class="k">print</span> <span class="n">allResponses</span><span class="p">[</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> 
+    <span class="n">rp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">allResponses</span><span class="p">[</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
+<span class="c1"># End for</span>
+</pre></div>
+</td></tr></table></p>
+</li>
+<li>
+<p>Finally, we gotta clean up our mess:
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">print</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Complete!&quot;</span>
 <span class="n">fp</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 <span class="n">rp</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
-</td></tr></table></li>
+</td></tr></table></p>
+</li>
 <li>
 <p>Great, press "Run" and wait like 5-7 minutes for this thing to run. Be patient. Good things take time. If you think something went wrong, please let us know!  </p>
 <div class="admonition danger">
@@ -922,6 +950,7 @@
 </ol>
 <h2 id="interpreting-the-results">Interpreting the Results<a class="headerlink" href="#interpreting-the-results" title="Permanent link">&para;</a></h2>
 <p><strong>Guidelines:</strong></p>
+<p>Your responses will be stored in <code>result.txt</code>.</p>
 <ol>
 <li>
 <p>Pick out the top 10 <strong>errored</strong> responses. What are they?</p>
