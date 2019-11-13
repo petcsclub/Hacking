@@ -13,7 +13,7 @@
         <meta name="description" content="Web Security and Exploitation Resources for the PET Computer Science Club">
       
       
-        <link rel="canonical" href="https://petcsclub.github.io/Hacking/Resources/6 - SQLi and Fuzzing/Notes/">
+        <link rel="canonical" href="https://petcsclub.github.io/Hacking/Resources/7 - XSS/Notes/">
       
       
         <meta name="author" content="Kevin Dai et al.">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Notes and Lab</title>
+        <title>Cross Site Scripting - Web Security and Exploitation</title>
       
     
     
@@ -96,7 +96,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#notes-and-lab" tabindex="1" class="md-skip">
+      <a href="#cross-site-scripting" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -122,7 +122,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Notes and Lab
+                Cross Site Scripting
               
             </span>
           
@@ -659,12 +659,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4" type="checkbox" id="nav-6-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4" type="checkbox" id="nav-6-4">
     
     <label class="md-nav__link" for="nav-6-4">
       6   SQLi and Fuzzing
@@ -682,7 +680,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Fuzzer/" title="Homebrew SQLi Fuzzer!" class="md-nav__link">
+    <a href="../../6 - SQLi and Fuzzing/Fuzzer/" title="Homebrew SQLi Fuzzer!" class="md-nav__link">
       Homebrew SQLi Fuzzer!
     </a>
   </li>
@@ -694,11 +692,49 @@
 
 
   <li class="md-nav__item">
-    <a href="../List/" title="Sample Fuzzing Results" class="md-nav__link">
+    <a href="../../6 - SQLi and Fuzzing/List/" title="Sample Fuzzing Results" class="md-nav__link">
       Sample Fuzzing Results
     </a>
   </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../6 - SQLi and Fuzzing/Notes/" title="Notes and Lab" class="md-nav__link">
+      Notes and Lab
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5" checked>
+    
+    <label class="md-nav__link" for="nav-6-5">
+      7   XSS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        7   XSS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -715,11 +751,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Notes and Lab
+        Cross Site Scripting
       </label>
     
-    <a href="./" title="Notes and Lab" class="md-nav__link md-nav__link--active">
-      Notes and Lab
+    <a href="./" title="Cross Site Scripting" class="md-nav__link md-nav__link--active">
+      Cross Site Scripting
     </a>
     
       
@@ -733,29 +769,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#your-task-evil-company-co" class="md-nav__link">
-    Your task: Evil Company Co.
+  <a href="#google-xss-challenge" class="md-nav__link">
+    Google XSS Challenge
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-reconnaissance" class="md-nav__link">
-    1. Reconnaissance
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-engage" class="md-nav__link">
-    2. Engage
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-exploit" class="md-nav__link">
-    3. Exploit
+  <a href="#some-advice" class="md-nav__link">
+    Some advice
   </a>
   
 </li>
@@ -768,42 +790,6 @@
   
 </nav>
     
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
-    
-    <label class="md-nav__link" for="nav-6-5">
-      7   XSS
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-5">
-        7   XSS
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../7 - XSS/Notes/" title="Cross Site Scripting" class="md-nav__link">
-      Cross Site Scripting
-    </a>
   </li>
 
         
@@ -838,29 +824,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#your-task-evil-company-co" class="md-nav__link">
-    Your task: Evil Company Co.
+  <a href="#google-xss-challenge" class="md-nav__link">
+    Google XSS Challenge
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-reconnaissance" class="md-nav__link">
-    1. Reconnaissance
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-engage" class="md-nav__link">
-    2. Engage
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-exploit" class="md-nav__link">
-    3. Exploit
+  <a href="#some-advice" class="md-nav__link">
+    Some advice
   </a>
   
 </li>
@@ -881,99 +853,36 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/petcsclub/Hacking/edit/master/docs/Resources/6 - SQLi and Fuzzing/Notes.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/petcsclub/Hacking/edit/master/docs/Resources/7 - XSS/Notes.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="notes-and-lab">Notes and Lab<a class="headerlink" href="#notes-and-lab" title="Permanent link">&para;</a></h1>
-<h2 id="your-task-evil-company-co">Your task: Evil Company Co.<a class="headerlink" href="#your-task-evil-company-co" title="Permanent link">&para;</a></h2>
-<p>Psst... Agent 142, now that you're an employee of Evil Company Co., try to exfiltrate some secrets off their website. <code>http://live.petcs.codes/</code> (<a href="http://live.petcs.codes/">link</a>). Can you find the secret code they assigned to your user?</p>
-<h2 id="1-reconnaissance">1. Reconnaissance<a class="headerlink" href="#1-reconnaissance" title="Permanent link">&para;</a></h2>
-<p>Look for where vulnerabilities may occur, especially:</p>
-<ol>
-<li>User interface (UI) forms and fields</li>
-<li>HTTP headers and cookies</li>
-<li>APIs</li>
-<li>Files/Other local storage</li>
-<li>Databases</li>
-<li>Email or other kinds of messages</li>
-</ol>
-<p>Once we've identified possible vulnerable locations, we'll attempt to identify the possible vulnerabilit(ies) we can carry out.</p>
-<div class="admonition success">
-<p class="admonition-title">Can you make a list of all vulnerable locations?</p>
-</div>
-<p><strong>Instructions:</strong></p>
-<ol>
-<li>Visit the website.</li>
-<li>Take note of these 3 pages presented in the menu. Which of the following pages might be vulnerable?<ul>
-<li>Home <code>/</code></li>
-<li>Login <code>/login</code></li>
-<li>Sign Up <code>/signup</code></li>
-</ul>
-</li>
-<li>Visit the "Sign Up" page. Right click anywhere and bring up "Inspect Element". Visit the "Network" tag and ensure "Preserve log" is checked. Locate the "Clear" button and click it.</li>
-<li>Create an account, <strong>but</strong> before clicking "Sign Up", inspect the Network activity (do you know how to use the <a href="../../../inspect/">Chrome Inspector</a>). What is happening when you create an account?<ul>
-<li>Can you find the HTTP POST request?</li>
-<li>Where is it sending to (aka <strong>Request Url</strong>)?</li>
-<li>What is the response code?</li>
-<li>What data is being sent (aka <strong>Form Data</strong>)?</li>
-</ul>
-</li>
-<li>Now log in. Clear your Network data right before clicking "Login". Again, what is happening when you login?<ul>
-<li>Can you find the HTTP POST request?</li>
-<li>Where is it sending to (aka <strong>Request Url</strong>)?</li>
-<li>What is the response code?</li>
-<li>What data is being sent (aka <strong>Form Data</strong>)?</li>
-</ul>
-</li>
-<li>Look at the menu. Did it change? Which of the following pages might be vulnerable?<ul>
-<li>Profile <code>/profile</code></li>
-<li>Todo <code>/todo</code></li>
-<li>Logout <code>/logout</code></li>
-</ul>
-</li>
-<li>Create a TODO item. What is happening when you add a new TODO item? Clear your Network data right before adding a new item.<ul>
-<li>Can you find the HTTP POST request?</li>
-<li>Where is it sending to (aka <strong>Request Url</strong>)?</li>
-<li>What is the response code?</li>
-<li>What data is being sent (aka <strong>Form Data</strong>)?</li>
-</ul>
-</li>
-<li>Play around and explore further. Take note of any strange behaviour.</li>
-</ol>
-<div class="admonition success">
-<p class="admonition-title">I can now know what is being sent/received to/from the server.</p>
-</div>
-<h2 id="2-engage">2. Engage<a class="headerlink" href="#2-engage" title="Permanent link">&para;</a></h2>
-<p><strong>Instructions:</strong></p>
-<ol>
-<li>Visit <a href="../Fuzzer/">here</a> to build your fuzzer! When you're done, come back.</li>
-<li>Run the fuzzer <strong>once</strong>. What do you notice?<ul>
-<li>Which values caused an error?</li>
-<li>Which values were marked suspicious?</li>
-<li>What does a 500 Response Code error mean? (Use Google)</li>
-<li><a href="../Fuzzer/#interpreting-the-results">Analyse and interpret</a> your results. What can you infer from these results? Is the server vulnerable to SQLi?</li>
-</ul>
-</li>
-<li>Now build your payload!</li>
-</ol>
-<h2 id="3-exploit">3. Exploit<a class="headerlink" href="#3-exploit" title="Permanent link">&para;</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">If your account becomes slow/laggy, create a new one!</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Don't worry, we will take this up together!</p>
-</div>
-<p><strong>Some tips:</strong></p>
-<p>Through fuzzing, we now know that an odd number of quotes will crash the server and an even number of quotes will result in suspicious responses.</p>
-<ol>
-<li>Try <code>a' || 'b</code> What do you see?</li>
-<li>Try <code>'||(SELECT 1+1)||'</code> What is so dangerous about <code>SELECT</code> statements?</li>
-<li>Try <code>'||(SELECT sqlite_version())||'</code> What version of SQLite is this server running?</li>
-<li>Try <code>'||(SELECT name FROM sqlite_master LIMIT 1 OFFSET 0)||'</code> <strong>What is the name of the table at OFFSET 0?</strong> What other tables are present on the server? What if you change the <code>OFFSET</code> to 1? To 2?</li>
-<li>Try <code>'||(SELECT sql FROM sqlite_master LIMIT 1 OFFSET 0)||'</code> What columns are present on this table? <strong>Do you see the name of this table?</strong> Try changing the <code>OFFSET</code>! Are there any other tables present?</li>
-<li>Try <code>'||(SELECT id from name_of_table)||'</code> (Replace <code>name_of_table</code> with the name you wrote down from the previous points). Can you leak the secret now?</li>
-<li><strong>Challenge (for a prize!):</strong> What other secrets are hidden on this server?</li>
-</ol>
+                <h1 id="cross-site-scripting">Cross Site Scripting<a class="headerlink" href="#cross-site-scripting" title="Permanent link">&para;</a></h1>
+<h2 id="google-xss-challenge">Google XSS Challenge<a class="headerlink" href="#google-xss-challenge" title="Permanent link">&para;</a></h2>
+<p>Visit: <a href="https://xss-game.appspot.com/">https://xss-game.appspot.com/</a></p>
+<p>Here is a list of all the link:</p>
+<p>Level 1: <a href="https://xss-game.appspot.com/level1/frame">Hello, world of XSS</a><br />
+Level 2: <a href="https://xss-game.appspot.com/level2/frame">Persistence is key</a><br />
+Level 3: <a href="https://xss-game.appspot.com/level3/frame">That sinking feeling...</a><br />
+Level 4: <a href="https://xss-game.appspot.com/level4/frame">Context matters</a><br />
+Level 5: <a href="https://xss-game.appspot.com/level5/frame">Breaking protocol</a><br />
+Level 6: <a href="https://xss-game.appspot.com/level6/frame">Follow the 🐇</a>  </p>
+<h2 id="some-advice">Some advice<a class="headerlink" href="#some-advice" title="Permanent link">&para;</a></h2>
+<p>Try injecting:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span>
+</pre></div>
+</td></tr></table>
+What about this?
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;alert(1)&quot;</span><span class="p">&gt;</span>Click Me!<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</pre></div>
+</td></tr></table>
+What do you think this will do?
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;javascript:alert(1)&quot;</span><span class="p">&gt;</span>Click Me!<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</pre></div>
+</td></tr></table>
+Hmm this looks suspicious...
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>//www.google.com/jsapi?callback=alert
+</pre></div>
+</td></tr></table></p>
                 
                   
                 
@@ -994,7 +903,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../List/" title="Sample Fuzzing Results" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../6 - SQLi and Fuzzing/Notes/" title="Notes and Lab" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1003,25 +912,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Sample Fuzzing Results
+                Notes and Lab
               </span>
             </div>
           </a>
         
-        
-          <a href="../../7 - XSS/Notes/" title="Cross Site Scripting" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Cross Site Scripting
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>

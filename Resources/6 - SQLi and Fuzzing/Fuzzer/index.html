@@ -762,6 +762,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      7   XSS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        7   XSS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../7 - XSS/Notes/" title="Cross Site Scripting" class="md-nav__link">
+      Cross Site Scripting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -910,16 +946,12 @@
 3
 4
 5
-6
-7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">print</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">Printing suspicious responses...&quot;</span>
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">print</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">Printing suspicious responses...&quot;</span>
 <span class="n">rp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">Printing suspicious responses...</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="n">suspiciousResponses</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">tup</span><span class="p">:</span> <span class="n">tup</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="c1"># Start for</span>
 <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">suspiciousResponses</span><span class="p">:</span>
     <span class="k">print</span> <span class="n">allResponses</span><span class="p">[</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> 
-    <span class="n">rp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">allResponses</span><span class="p">[</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
-<span class="c1"># End for</span>
+    <span class="n">rp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">allResponses</span><span class="p">[</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="p">)</span>
 </pre></div>
 </td></tr></table></p>
 </li>
@@ -950,7 +982,6 @@
 </ol>
 <h2 id="interpreting-the-results">Interpreting the Results<a class="headerlink" href="#interpreting-the-results" title="Permanent link">&para;</a></h2>
 <p><strong>Guidelines:</strong></p>
-<p>Your responses will be stored in <code>result.txt</code>.</p>
 <ol>
 <li>
 <p>Pick out the top 10 <strong>errored</strong> responses. What are they?</p>
